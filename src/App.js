@@ -1,16 +1,19 @@
 import './App.css'
-import { Fragment } from 'react';
+import Counter from './Counter';
 import Navbar from './Navbar';
 function App(){
+    const flowers =['Lotus','Rose','Sunflower','Hibiscus'];
+
     return (
-    <div>
-          <div className='bg-dark'>
-            <Navbar title = 'CSS'/>
-        </div>
-        <h1>
-            Hello World
-        </h1>
-    </div>
+    <>
+       
+            <Navbar title = 'CSS and separating JS adn JSX'/>
+   
+            <div className='container'>
+              <Counter />
+            </div>
+
+    </>
       
     );
 }
